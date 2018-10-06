@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+*uses postgres instead of sqlite3 bc Heroku does not support sqlite3 
