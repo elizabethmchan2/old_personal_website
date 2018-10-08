@@ -1,6 +1,9 @@
+<%# font %>
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|IBM+Plex+Sans:700" rel="stylesheet">
+<%# icons %>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div id="loader-wrapper">
+<%# <div id="loader-wrapper">
     <div id="loader">
         <h1> Hey, there! I'm Elizabeth Chan. </h1>
     </div>
@@ -8,15 +11,48 @@
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div> %>
 
- </div>
+ <%# </div> %>
 
 <div id="content">
-     <%# <ul>
-        <li> about </li>
-        <li> contact </li>
-    </ul>  %>
-
-    <p>I am currently a senior at Bryn Mawr College majoring in Computer Science. I am interested in the intersection of web technologies and art and how beautiful, smart, and effective website design can create a lasting impression for the user. I am looking for a full-time job after May 2019 that affords me the opportunity to work alongside passionate web developers.<p>
+    <h3>Hey, there! <br> I'm Elizabeth Chan.</h3>
+    <%=image_tag("downarrow.png", :id => "clickme")%>
+    <%# <button type="button" id = "clickme">click me</button> %>
 
 </div>
+
+
+
+<div id = "aboutme">
+
+    <div>
+        <p>Foodie. Urbanite. Embroiderer. Amateur skateboarder. Basketball enthusiast. Aspiring web developer. <br> I am seeking full-time opportunities to work alongside passionate web developers starting June 2019. </p>
+
+        <div class="icon">
+            <%# <a href = "https://www.linkedin.com/in/elizabeth-chan/" src="#" class="fa fa-linkedin"></a> %>
+            <%= link_to(image_tag("linkedin.png", :alt => "linkedin logo", :id => "linkedin", :title => "Home"), "https://www.linkedin.com/in/elizabeth-chan/") %>
+        </div>
+
+        <div class="icon">
+            <%= link_to(image_tag("github.png", :alt => "github logo", :id => "github", :title => "Home"), "https://github.com/elizabethmchan2") %>
+            <%# <a href = "https://github.com/elizabethmchan2" src="github_image.png" id = "github_icon"></a> %>
+        </div>
+        <%# <div class="icon">
+             <%= link_to(image_tag("resume.png", :alt => "resume logo", :id => "resume", :title => "Home"), "https://github.com/elizabethmchan2") %>
+        <%# </div>  %>
+
+        <%# <a href = "https://www.linkedin.com/in/elizabeth-chan/" src="#" class="fa fa-linkedin"></a> %>
+
+
+        <%# <a href = "https://github.com/elizabethmchan2" src="github_image.png" id = "github_icon"></a> %>
+
+    </div>
+    
+</div>
+;
+
+
  
+
+
+
+

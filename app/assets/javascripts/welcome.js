@@ -6,20 +6,38 @@
 //= require jquery
 //= require jquery_ujs
 
-
 $(document).ready(function () {
+  // alert("hello!")
 
-  setTimeout(function () {
-    $('body').addClass('loaded');
-    $('h1').css('color', '#222222');
-  }, 3000);
-
+  $('#clickme').on('click', function (event) {
+    event.preventDefault();
+    $('html,body').animate({
+      scrollTop: $('#aboutme').offset().top
+    }, 800);
+  });
 });
 
 
-// $(document).ready(function () {
-//   alert("hello!")
+// $("button").click(function () {
+//   $('html,body').animate({
+//       scrollTop: $(".second").offset().top
+//     },
+//     'slow');
 // });
+
+
+
+// $(document).ready(function () {
+
+//   setTimeout(function () {
+//     $('body').addClass('loaded');
+//     $('h1').css('color', '#222222');
+//   }, 3000);
+
+// });
+
+
+
 
 
 // $(document).ready ->
